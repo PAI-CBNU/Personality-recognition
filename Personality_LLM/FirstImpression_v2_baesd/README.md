@@ -1,6 +1,7 @@
 # Overview of Personality Trait Prediction Using Personality LLM Approaches
 This page presents the implementation code and performance evaluation results of First Impression v2 data.
 
+# The following architecture serves as the baseline model, in which positional encoding or the cross-attention module is incorporated after the linear layer.
 ![description](img/image.jpg)
 
 ## Performance Table

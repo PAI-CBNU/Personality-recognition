@@ -4,8 +4,7 @@ This page presents the implementation code and performance evaluation results of
 ## Performance Table
 |Model                        |Backcbone                                      |Method                                                                                                       |1 - MAE|Input Data                        |Resolution         |Frame|
 |-----------------------------|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------|-------|----------------------------------|-------------------|-----|
-|ViViT + HuBERT + mBART  |R(2+1)D Pretrained with Kinetics-400                |8 Video and Audio special tokens each                                                                        |0.9190 |Video, Audio, Text                |
-224x224            |15   |
+|ViViT + HuBERT + mBART  |R(2+1)D Pretrained with Kinetics-400                |8 Video and Audio special tokens each                                                                        |0.9190 |Video, Audio, Text                |224x224            |15   |
 |ViViT + HuBERT + Albert |R(2+1)D Pretrained with Kinetics-400                |2 Video and Audio special tokens each                                                                        |0.9189 |Video, Audio, Text                |224x224            |15   |
 |ViViT + HuBERT + mBART  |R(2+1)D Pretrained with Kinetics-400                |2 Video and Audio special tokens each, use cross-attention                                                   |0.9188 |Video, Audio, Text                |224x224            |15   |
 |ViViT + HuBERT + mBART  |R(2+1)D Pretrained with Kinetics-400                |8 Video and Audio special tokens each, add Positional Encoding                                               |0.9187 |Video, Audio, Text                |224x224            |15   |

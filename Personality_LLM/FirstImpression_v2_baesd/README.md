@@ -1,6 +1,8 @@
 # Overview of Personality Trait Prediction Using Personality LLM Approaches
 This page presents the implementation code and performance evaluation results of First Impression v2 data.
 
+![description](images/result.png)
+
 ## Performance Table
 |Model                        |Backcbone                                      |Method                                                                                                       |1 - MAE|Input Data                        |Resolution         |Frame|
 |-----------------------------|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------|-------|----------------------------------|-------------------|-----|

@@ -1,0 +1,19 @@
+# Overview of Personality Trait Prediction Using Personality LLM Approaches
+This page presents the implementation code and performance evaluation results of First Impression v2 data.
+
+## Performance Table
+|Model                        |Backcbone                                      |Method                                                                                                       |1 - MAE|Input Data                        |Resolution         |Frame|
+|-----------------------------|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------|-------|----------------------------------|-------------------|-----|
+|ViViT + HuBERT + mBART  |R(2+1)D Pretrained with Kinetics-400                |8 Video and Audio special tokens each                                                                        |0.9190 |Video, Audio, Text                |
+224x224            |15   |
+|ViViT + HuBERT + Albert |R(2+1)D Pretrained with Kinetics-400                |2 Video and Audio special tokens each                                                                        |0.9189 |Video, Audio, Text                |224x224            |15   |
+|ViViT + HuBERT + mBART  |R(2+1)D Pretrained with Kinetics-400                |2 Video and Audio special tokens each, use cross-attention                                                   |0.9188 |Video, Audio, Text                |224x224            |15   |
+|ViViT + HuBERT + mBART  |R(2+1)D Pretrained with Kinetics-400                |8 Video and Audio special tokens each, add Positional Encoding                                               |0.9187 |Video, Audio, Text                |224x224            |15   |
+|ViViT + HuBERT + mBART  |R(2+1)D Pretrained with Kinetics-400                |4 Video and Audio special tokens each                                                                        |0.9187 |Video, Audio, Text                |224x224            |15   | 
+|ViViT + HuBERT + Llama  |R(2+1)D Pretrained with Kinetics-400                |2 Video and Audio special tokens each                                                                        |0.9187 |Video, Audio, Text                |224x224            |15   |
+|ViViT + HuBERT + Llama  |R(2+1)D Pretrained with Kinetics-400                |2 Video and Audio special tokens each, use cross-attention                                                   |0.9186 |Video, Audio, Text                |224x224            |15   |
+|ViViT + HuBERT + Albert |R(2+1)D Pretrained with Kinetics-400                |2 Video and Audio special tokens each                                                                        |0.9186 |Video, Audio, Text                |224x224            |15   |
+|ViViT + HuBERT + mBART  |R(2+1)D Pretrained with Kinetics-400                |2 Video and Audio special tokens each                                                                        |0.9184 |Video, Audio, Text                |224x224            |15   |
+|ViViT + HuBERT + mBART  |R(2+1)D Pretrained with Kinetics-400                |8 Video and Audio special tokens each, add Positional Encoding                                               |0.9183 |Video, Audio, Text                |224x224            |15   |
+|ViViT + HuBERT + mBART  |R(2+1)D Pretrained with Kinetics-400                |8 Video and Audio special tokens each, add Positional Encoding                                               |0.9183 |Video, Audio, Text                |224x224            |15   |
+|ViViT + HuBERT + mBART  |R(2+1)D Pretrained with Kinetics-400                |1 Video and Audio special tokens each                                                                        |0.9170 |Video, Audio, Text                |224x224            |15   |
